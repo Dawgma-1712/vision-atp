@@ -9,5 +9,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 This is some quick c++ code, written in QTCreator, using qmake and OpenCV to do some basic vision code, with a nice-ish gui.
 
-This readme is a WIP, and the code is also very much a WIP.
-s
+Also includes a few VI's to do some basic tracking with the Limelight Camera. The VI of interest would be LimelightSeeker.vi
+
+There are a few others, but they are not a part of the core project. Nico VI's do some close range orientation fix using line sensors and ultrasonics. SeekerSim is a copy of LimelightSeeker, but it doesn't output motor values (for testing purposes).
