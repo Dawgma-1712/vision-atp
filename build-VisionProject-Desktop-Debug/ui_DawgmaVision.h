@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading UI file 'DawgmaVision.ui'
+** Form generated from reading UI file 'dawgmavision.ui'
 **
 ** Created by: Qt User Interface Compiler version 4.8.7
 **
@@ -13,6 +13,8 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QCheckBox>
+#include <QtGui/QComboBox>
 #include <QtGui/QGraphicsView>
 #include <QtGui/QGridLayout>
 #include <QtGui/QGroupBox>
@@ -28,41 +30,93 @@
 #include <QtGui/QTabWidget>
 #include <QtGui/QTreeWidget>
 #include <QtGui/QWidget>
-#include "QxtSpanSlider"
 
 QT_BEGIN_NAMESPACE
 
-class Ui_window
+class Ui_DawgmaVision
 {
 public:
+    QWidget *centralwidget;
     QWidget *gui_container;
     QTabWidget *tabs;
     QWidget *targeting_tab;
-    QGraphicsView *image_out;
-    QLabel *label;
     QScrollArea *numeric_output;
     QWidget *scrollAreaWidgetContents;
     QGridLayout *gridLayout_8;
-    QLabel *label_16;
-    QLCDNumber *lcdNumber_5;
-    QLCDNumber *lcdNumber_6;
-    QLabel *label_17;
-    QLCDNumber *lcdNumber;
     QLabel *label_18;
-    QLCDNumber *lcdNumber_2;
-    QLabel *label_19;
-    QLCDNumber *lcdNumber_3;
+    QLabel *label_17;
+    QLCDNumber *fullness_lcd;
     QLabel *label_20;
-    QLCDNumber *lcdNumber_4;
+    QLabel *label_19;
+    QLCDNumber *area_lcd;
+    QLCDNumber *vert_lcd;
+    QLabel *label_16;
+    QLCDNumber *arat_lcd;
+    QLCDNumber *y_lcd;
+    QLCDNumber *x_lcd;
     QScrollArea *settings;
     QWidget *scrollAreaWidgetContents_2;
     QGridLayout *gridLayout_9;
+    QGroupBox *shape_box;
+    QGridLayout *gridLayout_4;
+    QSlider *num_vert;
+    QLabel *label_12;
+    QSpinBox *num_vert_dsp;
+    QGroupBox *aspect_box;
+    QGridLayout *gridLayout_7;
+    QLabel *label_15;
+    QLabel *label_24;
+    QSlider *arat_upper;
+    QSlider *arat_lower;
+    QSpinBox *arat_l_dsp;
+    QSpinBox *arat_u_dsp;
+    QGroupBox *threshold_box;
+    QGridLayout *gridLayout_2;
+    QLabel *label_10;
+    QLabel *label_9;
+    QLabel *label_11;
+    QSlider *h_lower;
+    QSlider *v_lower;
+    QSlider *v_upper;
+    QSpinBox *v_u_dsp;
+    QSlider *h_upper;
+    QSlider *s_lower;
+    QSlider *s_upper;
+    QSpinBox *v_l_dsp;
+    QSpinBox *s_l_dsp;
+    QSpinBox *s_u_dsp;
+    QSpinBox *h_l_dsp;
+    QSpinBox *h_u_dsp;
     QGroupBox *area_box;
     QGridLayout *gridLayout_5;
-    QSpinBox *area_u_dsp;
-    QSpinBox *area_l_dsp;
-    QxtSpanSlider *area_span;
+    QSlider *area_upper;
     QLabel *label_13;
+    QSlider *area_lower;
+    QSpinBox *area_l_dsp;
+    QSpinBox *area_u_dsp;
+    QGroupBox *morpho_box;
+    QGridLayout *gridLayout_3;
+    QComboBox *ed_kernel_shape;
+    QSlider *dilation_kernelsize;
+    QSpinBox *d_k_size_disp;
+    QLabel *label;
+    QSpinBox *e_k_size_disp;
+    QLabel *label_8;
+    QLabel *label_7;
+    QSlider *erosion_kernelsize;
+    QComboBox *morpho_type;
+    QLabel *label_3;
+    QGroupBox *exposure_box;
+    QGridLayout *gridLayout_10;
+    QSlider *exposure_val;
+    QSpinBox *exposure_dsp;
+    QGroupBox *fullness_box;
+    QGridLayout *gridLayout_6;
+    QLabel *label_14;
+    QSlider *fullness_upper;
+    QSlider *fullness_lower;
+    QSpinBox *fullness_l_dsp;
+    QSpinBox *fullness_u_dsp;
     QGroupBox *blur_box;
     QGridLayout *gridLayout;
     QSlider *gaussian_kernelsize;
@@ -71,46 +125,9 @@ public:
     QLabel *label_6;
     QSpinBox *m_k_size_disp;
     QSlider *median_kernelsize;
-    QGroupBox *threshold_box;
-    QGridLayout *gridLayout_2;
-    QLabel *label_9;
-    QSpinBox *h_u_dsp;
-    QSpinBox *h_l_dsp;
-    QLabel *label_10;
-    QSpinBox *s_u_dsp;
-    QSpinBox *s_l_dsp;
-    QSpinBox *v_u_dsp;
-    QSpinBox *v_l_dsp;
-    QxtSpanSlider *h_threshold;
-    QxtSpanSlider *s_threshold;
-    QxtSpanSlider *v_threshold;
-    QLabel *label_11;
-    QGroupBox *fullness_box;
-    QGridLayout *gridLayout_6;
-    QSpinBox *fullness_l_dsp;
-    QSpinBox *fullness_u_dsp;
-    QLabel *label_14;
-    QxtSpanSlider *fullness_span;
-    QGroupBox *morpho_box;
-    QGridLayout *gridLayout_3;
-    QLabel *label_7;
-    QSlider *erosion_kernelsize;
-    QSpinBox *e_k_size_disp;
-    QLabel *label_8;
-    QSlider *dilation_kernelsize;
-    QSpinBox *d_k_size_disp;
-    QGroupBox *shape_box;
-    QGridLayout *gridLayout_4;
-    QSpinBox *num_vert_dsp;
-    QLabel *label_12;
-    QSlider *num_vert;
-    QGroupBox *aspect_box;
-    QGridLayout *gridLayout_7;
-    QSpinBox *arat_l_dsp;
-    QSpinBox *arat_u_dsp;
-    QxtSpanSlider *aratio_span;
-    QLabel *label_15;
-    QLabel *label_24;
+    QLabel *image_out;
+    QCheckBox *display_raw;
+    QCheckBox *display_processed;
     QWidget *networking_tab;
     QWidget *camera_settings;
     QTreeWidget *camera_settings_2;
@@ -124,23 +141,24 @@ public:
     QLineEdit *lineEdit_2;
     QLabel *label_21;
 
-    void setupUi(QMainWindow *window)
+    void setupUi(QMainWindow *DawgmaVision)
     {
-        if (window->objectName().isEmpty())
-            window->setObjectName(QString::fromUtf8("window"));
-        window->resize(815, 629);
+        if (DawgmaVision->objectName().isEmpty())
+            DawgmaVision->setObjectName(QString::fromUtf8("DawgmaVision"));
+        DawgmaVision->resize(1038, 645);
+        centralwidget = new QWidget(DawgmaVision);
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        gui_container = new QWidget(centralwidget);
+        gui_container->setObjectName(QString::fromUtf8("gui_container"));
+        gui_container->setGeometry(QRect(0, 0, 1041, 631));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(window->sizePolicy().hasHeightForWidth());
-        window->setSizePolicy(sizePolicy);
-        gui_container = new QWidget(window);
-        gui_container->setObjectName(QString::fromUtf8("gui_container"));
         sizePolicy.setHeightForWidth(gui_container->sizePolicy().hasHeightForWidth());
         gui_container->setSizePolicy(sizePolicy);
         tabs = new QTabWidget(gui_container);
         tabs->setObjectName(QString::fromUtf8("tabs"));
-        tabs->setGeometry(QRect(0, 0, 811, 631));
+        tabs->setGeometry(QRect(0, 0, 1041, 651));
         tabs->setTabPosition(QTabWidget::West);
         tabs->setElideMode(Qt::ElideNone);
         tabs->setDocumentMode(false);
@@ -148,134 +166,487 @@ public:
         tabs->setMovable(false);
         targeting_tab = new QWidget();
         targeting_tab->setObjectName(QString::fromUtf8("targeting_tab"));
-        image_out = new QGraphicsView(targeting_tab);
-        image_out->setObjectName(QString::fromUtf8("image_out"));
-        image_out->setGeometry(QRect(350, 30, 401, 421));
-        label = new QLabel(targeting_tab);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(350, 10, 56, 17));
         numeric_output = new QScrollArea(targeting_tab);
         numeric_output->setObjectName(QString::fromUtf8("numeric_output"));
-        numeric_output->setGeometry(QRect(350, 460, 401, 159));
+        numeric_output->setGeometry(QRect(350, 548, 651, 71));
         numeric_output->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 399, 157));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 634, 157));
         gridLayout_8 = new QGridLayout(scrollAreaWidgetContents);
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
-        label_16 = new QLabel(scrollAreaWidgetContents);
-        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_18 = new QLabel(scrollAreaWidgetContents);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
 
-        gridLayout_8->addWidget(label_16, 0, 0, 1, 1);
-
-        lcdNumber_5 = new QLCDNumber(scrollAreaWidgetContents);
-        lcdNumber_5->setObjectName(QString::fromUtf8("lcdNumber_5"));
-
-        gridLayout_8->addWidget(lcdNumber_5, 0, 1, 1, 1);
-
-        lcdNumber_6 = new QLCDNumber(scrollAreaWidgetContents);
-        lcdNumber_6->setObjectName(QString::fromUtf8("lcdNumber_6"));
-
-        gridLayout_8->addWidget(lcdNumber_6, 0, 2, 1, 1);
+        gridLayout_8->addWidget(label_18, 2, 0, 1, 1);
 
         label_17 = new QLabel(scrollAreaWidgetContents);
         label_17->setObjectName(QString::fromUtf8("label_17"));
 
         gridLayout_8->addWidget(label_17, 1, 0, 1, 1);
 
-        lcdNumber = new QLCDNumber(scrollAreaWidgetContents);
-        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
+        fullness_lcd = new QLCDNumber(scrollAreaWidgetContents);
+        fullness_lcd->setObjectName(QString::fromUtf8("fullness_lcd"));
 
-        gridLayout_8->addWidget(lcdNumber, 1, 1, 1, 1);
-
-        label_18 = new QLabel(scrollAreaWidgetContents);
-        label_18->setObjectName(QString::fromUtf8("label_18"));
-
-        gridLayout_8->addWidget(label_18, 2, 0, 1, 1);
-
-        lcdNumber_2 = new QLCDNumber(scrollAreaWidgetContents);
-        lcdNumber_2->setObjectName(QString::fromUtf8("lcdNumber_2"));
-
-        gridLayout_8->addWidget(lcdNumber_2, 2, 1, 1, 1);
-
-        label_19 = new QLabel(scrollAreaWidgetContents);
-        label_19->setObjectName(QString::fromUtf8("label_19"));
-
-        gridLayout_8->addWidget(label_19, 3, 0, 1, 1);
-
-        lcdNumber_3 = new QLCDNumber(scrollAreaWidgetContents);
-        lcdNumber_3->setObjectName(QString::fromUtf8("lcdNumber_3"));
-
-        gridLayout_8->addWidget(lcdNumber_3, 3, 1, 1, 1);
+        gridLayout_8->addWidget(fullness_lcd, 3, 1, 1, 1);
 
         label_20 = new QLabel(scrollAreaWidgetContents);
         label_20->setObjectName(QString::fromUtf8("label_20"));
 
         gridLayout_8->addWidget(label_20, 4, 0, 1, 1);
 
-        lcdNumber_4 = new QLCDNumber(scrollAreaWidgetContents);
-        lcdNumber_4->setObjectName(QString::fromUtf8("lcdNumber_4"));
+        label_19 = new QLabel(scrollAreaWidgetContents);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
 
-        gridLayout_8->addWidget(lcdNumber_4, 4, 1, 1, 1);
+        gridLayout_8->addWidget(label_19, 3, 0, 1, 1);
+
+        area_lcd = new QLCDNumber(scrollAreaWidgetContents);
+        area_lcd->setObjectName(QString::fromUtf8("area_lcd"));
+
+        gridLayout_8->addWidget(area_lcd, 2, 1, 1, 1);
+
+        vert_lcd = new QLCDNumber(scrollAreaWidgetContents);
+        vert_lcd->setObjectName(QString::fromUtf8("vert_lcd"));
+
+        gridLayout_8->addWidget(vert_lcd, 1, 1, 1, 1);
+
+        label_16 = new QLabel(scrollAreaWidgetContents);
+        label_16->setObjectName(QString::fromUtf8("label_16"));
+
+        gridLayout_8->addWidget(label_16, 0, 0, 1, 1);
+
+        arat_lcd = new QLCDNumber(scrollAreaWidgetContents);
+        arat_lcd->setObjectName(QString::fromUtf8("arat_lcd"));
+
+        gridLayout_8->addWidget(arat_lcd, 4, 1, 1, 1);
+
+        y_lcd = new QLCDNumber(scrollAreaWidgetContents);
+        y_lcd->setObjectName(QString::fromUtf8("y_lcd"));
+
+        gridLayout_8->addWidget(y_lcd, 0, 2, 1, 1);
+
+        x_lcd = new QLCDNumber(scrollAreaWidgetContents);
+        x_lcd->setObjectName(QString::fromUtf8("x_lcd"));
+
+        gridLayout_8->addWidget(x_lcd, 0, 1, 1, 1);
 
         numeric_output->setWidget(scrollAreaWidgetContents);
         settings = new QScrollArea(targeting_tab);
         settings->setObjectName(QString::fromUtf8("settings"));
-        settings->setGeometry(QRect(10, 10, 331, 601));
+        settings->setGeometry(QRect(0, 0, 331, 621));
         settings->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, -226, 314, 825));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, -525, 314, 1144));
         gridLayout_9 = new QGridLayout(scrollAreaWidgetContents_2);
         gridLayout_9->setObjectName(QString::fromUtf8("gridLayout_9"));
+        shape_box = new QGroupBox(scrollAreaWidgetContents_2);
+        shape_box->setObjectName(QString::fromUtf8("shape_box"));
+        shape_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
+        shape_box->setFlat(false);
+        shape_box->setCheckable(true);
+        shape_box->setChecked(false);
+        gridLayout_4 = new QGridLayout(shape_box);
+        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        num_vert = new QSlider(shape_box);
+        num_vert->setObjectName(QString::fromUtf8("num_vert"));
+        num_vert->setMaximum(10);
+        num_vert->setValue(4);
+        num_vert->setOrientation(Qt::Horizontal);
+        num_vert->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_4->addWidget(num_vert, 1, 0, 1, 1);
+
+        label_12 = new QLabel(shape_box);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
+
+        gridLayout_4->addWidget(label_12, 0, 0, 1, 1);
+
+        num_vert_dsp = new QSpinBox(shape_box);
+        num_vert_dsp->setObjectName(QString::fromUtf8("num_vert_dsp"));
+        num_vert_dsp->setMaximum(15);
+        num_vert_dsp->setValue(4);
+
+        gridLayout_4->addWidget(num_vert_dsp, 1, 1, 1, 1);
+
+
+        gridLayout_9->addWidget(shape_box, 5, 0, 1, 1);
+
+        aspect_box = new QGroupBox(scrollAreaWidgetContents_2);
+        aspect_box->setObjectName(QString::fromUtf8("aspect_box"));
+        aspect_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
+        aspect_box->setFlat(false);
+        aspect_box->setCheckable(true);
+        aspect_box->setChecked(false);
+        gridLayout_7 = new QGridLayout(aspect_box);
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        label_15 = new QLabel(aspect_box);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+
+        gridLayout_7->addWidget(label_15, 1, 0, 1, 1);
+
+        label_24 = new QLabel(aspect_box);
+        label_24->setObjectName(QString::fromUtf8("label_24"));
+
+        gridLayout_7->addWidget(label_24, 4, 1, 1, 1);
+
+        arat_upper = new QSlider(aspect_box);
+        arat_upper->setObjectName(QString::fromUtf8("arat_upper"));
+        arat_upper->setMaximum(200);
+        arat_upper->setValue(200);
+        arat_upper->setOrientation(Qt::Horizontal);
+        arat_upper->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_7->addWidget(arat_upper, 2, 0, 1, 2);
+
+        arat_lower = new QSlider(aspect_box);
+        arat_lower->setObjectName(QString::fromUtf8("arat_lower"));
+        arat_lower->setMaximum(200);
+        arat_lower->setOrientation(Qt::Horizontal);
+        arat_lower->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_7->addWidget(arat_lower, 3, 0, 1, 2);
+
+        arat_l_dsp = new QSpinBox(aspect_box);
+        arat_l_dsp->setObjectName(QString::fromUtf8("arat_l_dsp"));
+        arat_l_dsp->setMaximum(200);
+        arat_l_dsp->setValue(0);
+
+        gridLayout_7->addWidget(arat_l_dsp, 3, 2, 1, 1);
+
+        arat_u_dsp = new QSpinBox(aspect_box);
+        arat_u_dsp->setObjectName(QString::fromUtf8("arat_u_dsp"));
+        arat_u_dsp->setMaximum(200);
+        arat_u_dsp->setValue(200);
+
+        gridLayout_7->addWidget(arat_u_dsp, 2, 2, 1, 1);
+
+
+        gridLayout_9->addWidget(aspect_box, 8, 0, 1, 1);
+
+        threshold_box = new QGroupBox(scrollAreaWidgetContents_2);
+        threshold_box->setObjectName(QString::fromUtf8("threshold_box"));
+        threshold_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
+        threshold_box->setFlat(false);
+        threshold_box->setCheckable(true);
+        threshold_box->setChecked(false);
+        gridLayout_2 = new QGridLayout(threshold_box);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        label_10 = new QLabel(threshold_box);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+
+        gridLayout_2->addWidget(label_10, 4, 0, 1, 1);
+
+        label_9 = new QLabel(threshold_box);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        gridLayout_2->addWidget(label_9, 0, 0, 1, 1);
+
+        label_11 = new QLabel(threshold_box);
+        label_11->setObjectName(QString::fromUtf8("label_11"));
+
+        gridLayout_2->addWidget(label_11, 8, 0, 1, 1);
+
+        h_lower = new QSlider(threshold_box);
+        h_lower->setObjectName(QString::fromUtf8("h_lower"));
+        h_lower->setMaximum(180);
+        h_lower->setOrientation(Qt::Horizontal);
+        h_lower->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_2->addWidget(h_lower, 2, 0, 1, 1);
+
+        v_lower = new QSlider(threshold_box);
+        v_lower->setObjectName(QString::fromUtf8("v_lower"));
+        v_lower->setMaximum(255);
+        v_lower->setOrientation(Qt::Horizontal);
+        v_lower->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_2->addWidget(v_lower, 11, 0, 1, 1);
+
+        v_upper = new QSlider(threshold_box);
+        v_upper->setObjectName(QString::fromUtf8("v_upper"));
+        v_upper->setMaximum(255);
+        v_upper->setValue(255);
+        v_upper->setOrientation(Qt::Horizontal);
+        v_upper->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_2->addWidget(v_upper, 9, 0, 1, 1);
+
+        v_u_dsp = new QSpinBox(threshold_box);
+        v_u_dsp->setObjectName(QString::fromUtf8("v_u_dsp"));
+        v_u_dsp->setMaximum(255);
+        v_u_dsp->setValue(255);
+
+        gridLayout_2->addWidget(v_u_dsp, 9, 1, 1, 1);
+
+        h_upper = new QSlider(threshold_box);
+        h_upper->setObjectName(QString::fromUtf8("h_upper"));
+        h_upper->setMaximum(180);
+        h_upper->setValue(180);
+        h_upper->setOrientation(Qt::Horizontal);
+        h_upper->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_2->addWidget(h_upper, 1, 0, 1, 1);
+
+        s_lower = new QSlider(threshold_box);
+        s_lower->setObjectName(QString::fromUtf8("s_lower"));
+        s_lower->setMaximum(255);
+        s_lower->setOrientation(Qt::Horizontal);
+        s_lower->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_2->addWidget(s_lower, 6, 0, 1, 1);
+
+        s_upper = new QSlider(threshold_box);
+        s_upper->setObjectName(QString::fromUtf8("s_upper"));
+        s_upper->setMaximum(255);
+        s_upper->setValue(255);
+        s_upper->setOrientation(Qt::Horizontal);
+        s_upper->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_2->addWidget(s_upper, 5, 0, 1, 1);
+
+        v_l_dsp = new QSpinBox(threshold_box);
+        v_l_dsp->setObjectName(QString::fromUtf8("v_l_dsp"));
+        v_l_dsp->setMaximum(255);
+
+        gridLayout_2->addWidget(v_l_dsp, 11, 1, 1, 1);
+
+        s_l_dsp = new QSpinBox(threshold_box);
+        s_l_dsp->setObjectName(QString::fromUtf8("s_l_dsp"));
+        s_l_dsp->setMaximum(255);
+
+        gridLayout_2->addWidget(s_l_dsp, 6, 1, 1, 1);
+
+        s_u_dsp = new QSpinBox(threshold_box);
+        s_u_dsp->setObjectName(QString::fromUtf8("s_u_dsp"));
+        s_u_dsp->setMaximum(255);
+        s_u_dsp->setValue(255);
+
+        gridLayout_2->addWidget(s_u_dsp, 5, 1, 1, 1);
+
+        h_l_dsp = new QSpinBox(threshold_box);
+        h_l_dsp->setObjectName(QString::fromUtf8("h_l_dsp"));
+        h_l_dsp->setMaximum(180);
+
+        gridLayout_2->addWidget(h_l_dsp, 2, 1, 1, 1);
+
+        h_u_dsp = new QSpinBox(threshold_box);
+        h_u_dsp->setObjectName(QString::fromUtf8("h_u_dsp"));
+        h_u_dsp->setMaximum(180);
+        h_u_dsp->setValue(180);
+
+        gridLayout_2->addWidget(h_u_dsp, 1, 1, 1, 1);
+
+
+        gridLayout_9->addWidget(threshold_box, 1, 0, 1, 1);
+
         area_box = new QGroupBox(scrollAreaWidgetContents_2);
         area_box->setObjectName(QString::fromUtf8("area_box"));
         area_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
         area_box->setFlat(false);
         area_box->setCheckable(true);
+        area_box->setChecked(false);
         gridLayout_5 = new QGridLayout(area_box);
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
-        area_u_dsp = new QSpinBox(area_box);
-        area_u_dsp->setObjectName(QString::fromUtf8("area_u_dsp"));
-        area_u_dsp->setMaximum(100);
-        area_u_dsp->setValue(100);
+        area_upper = new QSlider(area_box);
+        area_upper->setObjectName(QString::fromUtf8("area_upper"));
+        area_upper->setMaximum(100);
+        area_upper->setValue(100);
+        area_upper->setOrientation(Qt::Horizontal);
+        area_upper->setTickPosition(QSlider::TicksAbove);
 
-        gridLayout_5->addWidget(area_u_dsp, 0, 2, 1, 1);
-
-        area_l_dsp = new QSpinBox(area_box);
-        area_l_dsp->setObjectName(QString::fromUtf8("area_l_dsp"));
-        area_l_dsp->setValue(3);
-
-        gridLayout_5->addWidget(area_l_dsp, 1, 2, 1, 1);
-
-        area_span = new QxtSpanSlider(area_box);
-        area_span->setObjectName(QString::fromUtf8("area_span"));
-        area_span->setMaximum(100);
-        area_span->setOrientation(Qt::Horizontal);
-        area_span->setTickPosition(QSlider::TicksAbove);
-        area_span->setProperty("lowerValue", QVariant(3));
-        area_span->setProperty("upperValue", QVariant(100));
-
-        gridLayout_5->addWidget(area_span, 0, 1, 1, 1);
+        gridLayout_5->addWidget(area_upper, 1, 0, 1, 1);
 
         label_13 = new QLabel(area_box);
         label_13->setObjectName(QString::fromUtf8("label_13"));
 
         gridLayout_5->addWidget(label_13, 0, 0, 1, 1);
 
+        area_lower = new QSlider(area_box);
+        area_lower->setObjectName(QString::fromUtf8("area_lower"));
+        area_lower->setMaximum(100);
+        area_lower->setValue(3);
+        area_lower->setOrientation(Qt::Horizontal);
+        area_lower->setTickPosition(QSlider::TicksAbove);
 
-        gridLayout_9->addWidget(area_box, 4, 0, 1, 1);
+        gridLayout_5->addWidget(area_lower, 2, 0, 1, 1);
+
+        area_l_dsp = new QSpinBox(area_box);
+        area_l_dsp->setObjectName(QString::fromUtf8("area_l_dsp"));
+        area_l_dsp->setMaximum(100);
+        area_l_dsp->setValue(3);
+
+        gridLayout_5->addWidget(area_l_dsp, 2, 1, 1, 1);
+
+        area_u_dsp = new QSpinBox(area_box);
+        area_u_dsp->setObjectName(QString::fromUtf8("area_u_dsp"));
+        area_u_dsp->setMaximum(100);
+        area_u_dsp->setValue(100);
+
+        gridLayout_5->addWidget(area_u_dsp, 1, 1, 1, 1);
+
+
+        gridLayout_9->addWidget(area_box, 6, 0, 1, 1);
+
+        morpho_box = new QGroupBox(scrollAreaWidgetContents_2);
+        morpho_box->setObjectName(QString::fromUtf8("morpho_box"));
+        morpho_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
+        morpho_box->setFlat(false);
+        morpho_box->setCheckable(true);
+        morpho_box->setChecked(false);
+        gridLayout_3 = new QGridLayout(morpho_box);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        ed_kernel_shape = new QComboBox(morpho_box);
+        ed_kernel_shape->setObjectName(QString::fromUtf8("ed_kernel_shape"));
+
+        gridLayout_3->addWidget(ed_kernel_shape, 0, 2, 1, 1);
+
+        dilation_kernelsize = new QSlider(morpho_box);
+        dilation_kernelsize->setObjectName(QString::fromUtf8("dilation_kernelsize"));
+        dilation_kernelsize->setMaximum(30);
+        dilation_kernelsize->setValue(5);
+        dilation_kernelsize->setOrientation(Qt::Horizontal);
+        dilation_kernelsize->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_3->addWidget(dilation_kernelsize, 3, 2, 1, 1);
+
+        d_k_size_disp = new QSpinBox(morpho_box);
+        d_k_size_disp->setObjectName(QString::fromUtf8("d_k_size_disp"));
+        d_k_size_disp->setMaximum(30);
+        d_k_size_disp->setValue(5);
+
+        gridLayout_3->addWidget(d_k_size_disp, 3, 3, 1, 1);
+
+        label = new QLabel(morpho_box);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        gridLayout_3->addWidget(label, 0, 1, 1, 1);
+
+        e_k_size_disp = new QSpinBox(morpho_box);
+        e_k_size_disp->setObjectName(QString::fromUtf8("e_k_size_disp"));
+        e_k_size_disp->setMaximum(30);
+        e_k_size_disp->setValue(5);
+
+        gridLayout_3->addWidget(e_k_size_disp, 2, 3, 1, 1);
+
+        label_8 = new QLabel(morpho_box);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        gridLayout_3->addWidget(label_8, 3, 1, 1, 1);
+
+        label_7 = new QLabel(morpho_box);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        gridLayout_3->addWidget(label_7, 2, 1, 1, 1);
+
+        erosion_kernelsize = new QSlider(morpho_box);
+        erosion_kernelsize->setObjectName(QString::fromUtf8("erosion_kernelsize"));
+        erosion_kernelsize->setMaximum(30);
+        erosion_kernelsize->setValue(5);
+        erosion_kernelsize->setOrientation(Qt::Horizontal);
+        erosion_kernelsize->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_3->addWidget(erosion_kernelsize, 2, 2, 1, 1);
+
+        morpho_type = new QComboBox(morpho_box);
+        morpho_type->setObjectName(QString::fromUtf8("morpho_type"));
+
+        gridLayout_3->addWidget(morpho_type, 1, 2, 1, 1);
+
+        label_3 = new QLabel(morpho_box);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        gridLayout_3->addWidget(label_3, 1, 1, 1, 1);
+
+
+        gridLayout_9->addWidget(morpho_box, 4, 0, 1, 1);
+
+        exposure_box = new QGroupBox(scrollAreaWidgetContents_2);
+        exposure_box->setObjectName(QString::fromUtf8("exposure_box"));
+        exposure_box->setCheckable(true);
+        exposure_box->setChecked(false);
+        gridLayout_10 = new QGridLayout(exposure_box);
+        gridLayout_10->setObjectName(QString::fromUtf8("gridLayout_10"));
+        exposure_val = new QSlider(exposure_box);
+        exposure_val->setObjectName(QString::fromUtf8("exposure_val"));
+        exposure_val->setMinimum(3);
+        exposure_val->setMaximum(2047);
+        exposure_val->setOrientation(Qt::Horizontal);
+        exposure_val->setTickPosition(QSlider::TicksAbove);
+        exposure_val->setTickInterval(0);
+
+        gridLayout_10->addWidget(exposure_val, 0, 0, 1, 1);
+
+        exposure_dsp = new QSpinBox(exposure_box);
+        exposure_dsp->setObjectName(QString::fromUtf8("exposure_dsp"));
+        exposure_dsp->setMinimum(3);
+        exposure_dsp->setMaximum(2047);
+
+        gridLayout_10->addWidget(exposure_dsp, 0, 1, 1, 1);
+
+
+        gridLayout_9->addWidget(exposure_box, 2, 0, 1, 1);
+
+        fullness_box = new QGroupBox(scrollAreaWidgetContents_2);
+        fullness_box->setObjectName(QString::fromUtf8("fullness_box"));
+        fullness_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
+        fullness_box->setFlat(false);
+        fullness_box->setCheckable(true);
+        fullness_box->setChecked(false);
+        gridLayout_6 = new QGridLayout(fullness_box);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        label_14 = new QLabel(fullness_box);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+
+        gridLayout_6->addWidget(label_14, 0, 0, 1, 1);
+
+        fullness_upper = new QSlider(fullness_box);
+        fullness_upper->setObjectName(QString::fromUtf8("fullness_upper"));
+        fullness_upper->setMaximum(100);
+        fullness_upper->setValue(100);
+        fullness_upper->setOrientation(Qt::Horizontal);
+        fullness_upper->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_6->addWidget(fullness_upper, 1, 0, 1, 1);
+
+        fullness_lower = new QSlider(fullness_box);
+        fullness_lower->setObjectName(QString::fromUtf8("fullness_lower"));
+        fullness_lower->setMaximum(100);
+        fullness_lower->setValue(3);
+        fullness_lower->setOrientation(Qt::Horizontal);
+        fullness_lower->setTickPosition(QSlider::TicksAbove);
+
+        gridLayout_6->addWidget(fullness_lower, 2, 0, 1, 1);
+
+        fullness_l_dsp = new QSpinBox(fullness_box);
+        fullness_l_dsp->setObjectName(QString::fromUtf8("fullness_l_dsp"));
+        fullness_l_dsp->setMaximum(100);
+        fullness_l_dsp->setValue(3);
+
+        gridLayout_6->addWidget(fullness_l_dsp, 2, 1, 1, 1);
+
+        fullness_u_dsp = new QSpinBox(fullness_box);
+        fullness_u_dsp->setObjectName(QString::fromUtf8("fullness_u_dsp"));
+        fullness_u_dsp->setMaximum(100);
+        fullness_u_dsp->setValue(100);
+
+        gridLayout_6->addWidget(fullness_u_dsp, 1, 1, 1, 1);
+
+
+        gridLayout_9->addWidget(fullness_box, 7, 0, 1, 1);
 
         blur_box = new QGroupBox(scrollAreaWidgetContents_2);
         blur_box->setObjectName(QString::fromUtf8("blur_box"));
+        blur_box->setEnabled(true);
         blur_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
         blur_box->setFlat(false);
         blur_box->setCheckable(true);
+        blur_box->setChecked(false);
         gridLayout = new QGridLayout(blur_box);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gaussian_kernelsize = new QSlider(blur_box);
         gaussian_kernelsize->setObjectName(QString::fromUtf8("gaussian_kernelsize"));
-        gaussian_kernelsize->setMaximum(30);
+        gaussian_kernelsize->setMaximum(5);
         gaussian_kernelsize->setValue(5);
         gaussian_kernelsize->setOrientation(Qt::Horizontal);
         gaussian_kernelsize->setTickPosition(QSlider::TicksAbove);
@@ -284,7 +655,7 @@ public:
 
         g_k_size_disp = new QSpinBox(blur_box);
         g_k_size_disp->setObjectName(QString::fromUtf8("g_k_size_disp"));
-        g_k_size_disp->setMaximum(30);
+        g_k_size_disp->setMaximum(5);
         g_k_size_disp->setValue(5);
 
         gridLayout->addWidget(g_k_size_disp, 0, 2, 1, 1);
@@ -301,282 +672,40 @@ public:
 
         m_k_size_disp = new QSpinBox(blur_box);
         m_k_size_disp->setObjectName(QString::fromUtf8("m_k_size_disp"));
-        m_k_size_disp->setMaximum(30);
+        m_k_size_disp->setMaximum(5);
 
         gridLayout->addWidget(m_k_size_disp, 1, 2, 1, 1);
 
         median_kernelsize = new QSlider(blur_box);
         median_kernelsize->setObjectName(QString::fromUtf8("median_kernelsize"));
-        median_kernelsize->setMaximum(30);
+        median_kernelsize->setMaximum(5);
         median_kernelsize->setOrientation(Qt::Horizontal);
         median_kernelsize->setTickPosition(QSlider::TicksAbove);
 
         gridLayout->addWidget(median_kernelsize, 1, 1, 1, 1);
 
 
-        gridLayout_9->addWidget(blur_box, 0, 0, 1, 1);
-
-        threshold_box = new QGroupBox(scrollAreaWidgetContents_2);
-        threshold_box->setObjectName(QString::fromUtf8("threshold_box"));
-        threshold_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
-        threshold_box->setFlat(false);
-        threshold_box->setCheckable(true);
-        gridLayout_2 = new QGridLayout(threshold_box);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        label_9 = new QLabel(threshold_box);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-
-        gridLayout_2->addWidget(label_9, 0, 0, 1, 1);
-
-        h_u_dsp = new QSpinBox(threshold_box);
-        h_u_dsp->setObjectName(QString::fromUtf8("h_u_dsp"));
-        h_u_dsp->setMaximum(180);
-        h_u_dsp->setValue(180);
-
-        gridLayout_2->addWidget(h_u_dsp, 0, 2, 1, 1);
-
-        h_l_dsp = new QSpinBox(threshold_box);
-        h_l_dsp->setObjectName(QString::fromUtf8("h_l_dsp"));
-        h_l_dsp->setMaximum(180);
-
-        gridLayout_2->addWidget(h_l_dsp, 1, 2, 1, 1);
-
-        label_10 = new QLabel(threshold_box);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
-
-        gridLayout_2->addWidget(label_10, 2, 0, 1, 1);
-
-        s_u_dsp = new QSpinBox(threshold_box);
-        s_u_dsp->setObjectName(QString::fromUtf8("s_u_dsp"));
-        s_u_dsp->setMaximum(255);
-        s_u_dsp->setValue(255);
-
-        gridLayout_2->addWidget(s_u_dsp, 2, 2, 1, 1);
-
-        s_l_dsp = new QSpinBox(threshold_box);
-        s_l_dsp->setObjectName(QString::fromUtf8("s_l_dsp"));
-        s_l_dsp->setMaximum(255);
-
-        gridLayout_2->addWidget(s_l_dsp, 3, 2, 1, 1);
-
-        v_u_dsp = new QSpinBox(threshold_box);
-        v_u_dsp->setObjectName(QString::fromUtf8("v_u_dsp"));
-        v_u_dsp->setMaximum(255);
-        v_u_dsp->setValue(255);
-
-        gridLayout_2->addWidget(v_u_dsp, 4, 2, 1, 1);
-
-        v_l_dsp = new QSpinBox(threshold_box);
-        v_l_dsp->setObjectName(QString::fromUtf8("v_l_dsp"));
-        v_l_dsp->setMaximum(255);
-
-        gridLayout_2->addWidget(v_l_dsp, 5, 2, 1, 1);
-
-        h_threshold = new QxtSpanSlider(threshold_box);
-        h_threshold->setObjectName(QString::fromUtf8("h_threshold"));
-        h_threshold->setMaximum(180);
-        h_threshold->setOrientation(Qt::Horizontal);
-        h_threshold->setTickPosition(QSlider::TicksAbove);
-        h_threshold->setProperty("upperValue", QVariant(180));
-
-        gridLayout_2->addWidget(h_threshold, 0, 1, 2, 1);
-
-        s_threshold = new QxtSpanSlider(threshold_box);
-        s_threshold->setObjectName(QString::fromUtf8("s_threshold"));
-        s_threshold->setMaximum(255);
-        s_threshold->setOrientation(Qt::Horizontal);
-        s_threshold->setTickPosition(QSlider::TicksAbove);
-        s_threshold->setProperty("upperValue", QVariant(255));
-
-        gridLayout_2->addWidget(s_threshold, 2, 1, 2, 1);
-
-        v_threshold = new QxtSpanSlider(threshold_box);
-        v_threshold->setObjectName(QString::fromUtf8("v_threshold"));
-        v_threshold->setMaximum(255);
-        v_threshold->setOrientation(Qt::Horizontal);
-        v_threshold->setTickPosition(QSlider::TicksAbove);
-        v_threshold->setProperty("upperValue", QVariant(255));
-
-        gridLayout_2->addWidget(v_threshold, 4, 1, 2, 1);
-
-        label_11 = new QLabel(threshold_box);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-
-        gridLayout_2->addWidget(label_11, 4, 0, 1, 1);
-
-
-        gridLayout_9->addWidget(threshold_box, 1, 0, 1, 1);
-
-        fullness_box = new QGroupBox(scrollAreaWidgetContents_2);
-        fullness_box->setObjectName(QString::fromUtf8("fullness_box"));
-        fullness_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
-        fullness_box->setFlat(false);
-        fullness_box->setCheckable(true);
-        gridLayout_6 = new QGridLayout(fullness_box);
-        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
-        fullness_l_dsp = new QSpinBox(fullness_box);
-        fullness_l_dsp->setObjectName(QString::fromUtf8("fullness_l_dsp"));
-        fullness_l_dsp->setMaximum(100);
-        fullness_l_dsp->setValue(3);
-
-        gridLayout_6->addWidget(fullness_l_dsp, 2, 2, 1, 1);
-
-        fullness_u_dsp = new QSpinBox(fullness_box);
-        fullness_u_dsp->setObjectName(QString::fromUtf8("fullness_u_dsp"));
-        fullness_u_dsp->setMaximum(100);
-        fullness_u_dsp->setValue(100);
-
-        gridLayout_6->addWidget(fullness_u_dsp, 0, 2, 1, 1);
-
-        label_14 = new QLabel(fullness_box);
-        label_14->setObjectName(QString::fromUtf8("label_14"));
-
-        gridLayout_6->addWidget(label_14, 0, 0, 1, 1);
-
-        fullness_span = new QxtSpanSlider(fullness_box);
-        fullness_span->setObjectName(QString::fromUtf8("fullness_span"));
-        fullness_span->setMaximum(100);
-        fullness_span->setOrientation(Qt::Horizontal);
-        fullness_span->setTickPosition(QSlider::TicksAbove);
-        fullness_span->setProperty("lowerValue", QVariant(3));
-        fullness_span->setProperty("upperValue", QVariant(100));
-
-        gridLayout_6->addWidget(fullness_span, 0, 1, 1, 1);
-
-
-        gridLayout_9->addWidget(fullness_box, 5, 0, 1, 1);
-
-        morpho_box = new QGroupBox(scrollAreaWidgetContents_2);
-        morpho_box->setObjectName(QString::fromUtf8("morpho_box"));
-        morpho_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
-        morpho_box->setFlat(false);
-        morpho_box->setCheckable(true);
-        gridLayout_3 = new QGridLayout(morpho_box);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        label_7 = new QLabel(morpho_box);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-
-        gridLayout_3->addWidget(label_7, 0, 0, 1, 1);
-
-        erosion_kernelsize = new QSlider(morpho_box);
-        erosion_kernelsize->setObjectName(QString::fromUtf8("erosion_kernelsize"));
-        erosion_kernelsize->setMaximum(30);
-        erosion_kernelsize->setValue(5);
-        erosion_kernelsize->setOrientation(Qt::Horizontal);
-        erosion_kernelsize->setTickPosition(QSlider::TicksAbove);
-
-        gridLayout_3->addWidget(erosion_kernelsize, 0, 1, 1, 1);
-
-        e_k_size_disp = new QSpinBox(morpho_box);
-        e_k_size_disp->setObjectName(QString::fromUtf8("e_k_size_disp"));
-        e_k_size_disp->setMaximum(30);
-        e_k_size_disp->setValue(5);
-
-        gridLayout_3->addWidget(e_k_size_disp, 0, 2, 1, 1);
-
-        label_8 = new QLabel(morpho_box);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-
-        gridLayout_3->addWidget(label_8, 1, 0, 1, 1);
-
-        dilation_kernelsize = new QSlider(morpho_box);
-        dilation_kernelsize->setObjectName(QString::fromUtf8("dilation_kernelsize"));
-        dilation_kernelsize->setMaximum(30);
-        dilation_kernelsize->setValue(5);
-        dilation_kernelsize->setOrientation(Qt::Horizontal);
-        dilation_kernelsize->setTickPosition(QSlider::TicksAbove);
-
-        gridLayout_3->addWidget(dilation_kernelsize, 1, 1, 1, 1);
-
-        d_k_size_disp = new QSpinBox(morpho_box);
-        d_k_size_disp->setObjectName(QString::fromUtf8("d_k_size_disp"));
-        d_k_size_disp->setMaximum(30);
-        d_k_size_disp->setValue(5);
-
-        gridLayout_3->addWidget(d_k_size_disp, 1, 2, 1, 1);
-
-
-        gridLayout_9->addWidget(morpho_box, 2, 0, 1, 1);
-
-        shape_box = new QGroupBox(scrollAreaWidgetContents_2);
-        shape_box->setObjectName(QString::fromUtf8("shape_box"));
-        shape_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
-        shape_box->setFlat(false);
-        shape_box->setCheckable(true);
-        gridLayout_4 = new QGridLayout(shape_box);
-        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
-        num_vert_dsp = new QSpinBox(shape_box);
-        num_vert_dsp->setObjectName(QString::fromUtf8("num_vert_dsp"));
-        num_vert_dsp->setMaximum(15);
-        num_vert_dsp->setValue(4);
-
-        gridLayout_4->addWidget(num_vert_dsp, 0, 2, 1, 1);
-
-        label_12 = new QLabel(shape_box);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-
-        gridLayout_4->addWidget(label_12, 0, 0, 1, 1);
-
-        num_vert = new QSlider(shape_box);
-        num_vert->setObjectName(QString::fromUtf8("num_vert"));
-        num_vert->setMaximum(15);
-        num_vert->setValue(4);
-        num_vert->setOrientation(Qt::Horizontal);
-        num_vert->setTickPosition(QSlider::TicksAbove);
-
-        gridLayout_4->addWidget(num_vert, 0, 1, 1, 1);
-
-
-        gridLayout_9->addWidget(shape_box, 3, 0, 1, 1);
-
-        aspect_box = new QGroupBox(scrollAreaWidgetContents_2);
-        aspect_box->setObjectName(QString::fromUtf8("aspect_box"));
-        aspect_box->setAlignment(Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing);
-        aspect_box->setFlat(false);
-        aspect_box->setCheckable(true);
-        gridLayout_7 = new QGridLayout(aspect_box);
-        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
-        arat_l_dsp = new QSpinBox(aspect_box);
-        arat_l_dsp->setObjectName(QString::fromUtf8("arat_l_dsp"));
-        arat_l_dsp->setMaximum(200);
-        arat_l_dsp->setValue(10);
-
-        gridLayout_7->addWidget(arat_l_dsp, 3, 2, 1, 1);
-
-        arat_u_dsp = new QSpinBox(aspect_box);
-        arat_u_dsp->setObjectName(QString::fromUtf8("arat_u_dsp"));
-        arat_u_dsp->setMaximum(200);
-        arat_u_dsp->setValue(20);
-
-        gridLayout_7->addWidget(arat_u_dsp, 1, 2, 1, 1);
-
-        aratio_span = new QxtSpanSlider(aspect_box);
-        aratio_span->setObjectName(QString::fromUtf8("aratio_span"));
-        aratio_span->setMaximum(200);
-        aratio_span->setSingleStep(1);
-        aratio_span->setOrientation(Qt::Horizontal);
-        aratio_span->setTickPosition(QSlider::TicksAbove);
-        aratio_span->setTickInterval(0);
-        aratio_span->setProperty("lowerValue", QVariant(10));
-        aratio_span->setProperty("upperValue", QVariant(20));
-
-        gridLayout_7->addWidget(aratio_span, 1, 1, 1, 1);
-
-        label_15 = new QLabel(aspect_box);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
-
-        gridLayout_7->addWidget(label_15, 1, 0, 1, 1);
-
-        label_24 = new QLabel(aspect_box);
-        label_24->setObjectName(QString::fromUtf8("label_24"));
-
-        gridLayout_7->addWidget(label_24, 3, 1, 1, 1);
-
-
-        gridLayout_9->addWidget(aspect_box, 6, 0, 1, 1);
+        gridLayout_9->addWidget(blur_box, 3, 0, 1, 1);
 
         settings->setWidget(scrollAreaWidgetContents_2);
+        image_out = new QLabel(targeting_tab);
+        image_out->setObjectName(QString::fromUtf8("image_out"));
+        image_out->setGeometry(QRect(350, 30, 640, 480));
+        display_raw = new QCheckBox(targeting_tab);
+        display_raw->setObjectName(QString::fromUtf8("display_raw"));
+        display_raw->setGeometry(QRect(340, 0, 101, 22));
+        display_raw->setChecked(true);
+        display_raw->setTristate(false);
+        display_processed = new QCheckBox(targeting_tab);
+        display_processed->setObjectName(QString::fromUtf8("display_processed"));
+        display_processed->setGeometry(QRect(450, 0, 141, 22));
+        display_processed->setChecked(true);
         tabs->addTab(targeting_tab, QString());
+        settings->raise();
+        image_out->raise();
+        numeric_output->raise();
+        display_raw->raise();
+        display_processed->raise();
         networking_tab = new QWidget();
         networking_tab->setObjectName(QString::fromUtf8("networking_tab"));
         tabs->addTab(networking_tab, QString());
@@ -683,210 +812,230 @@ public:
         label_21->setObjectName(QString::fromUtf8("label_21"));
         label_21->setGeometry(QRect(100, 540, 59, 17));
         tabs->addTab(menu, QString());
-        window->setCentralWidget(gui_container);
+        DawgmaVision->setCentralWidget(centralwidget);
 
-        retranslateUi(window);
+        retranslateUi(DawgmaVision);
         QObject::connect(gaussian_kernelsize, SIGNAL(valueChanged(int)), g_k_size_disp, SLOT(setValue(int)));
+        QObject::connect(g_k_size_disp, SIGNAL(valueChanged(int)), gaussian_kernelsize, SLOT(setValue(int)));
         QObject::connect(median_kernelsize, SIGNAL(valueChanged(int)), m_k_size_disp, SLOT(setValue(int)));
-        QObject::connect(h_threshold, SIGNAL(upperValueChanged(int)), h_u_dsp, SLOT(setValue(int)));
-        QObject::connect(h_threshold, SIGNAL(lowerValueChanged(int)), h_l_dsp, SLOT(setValue(int)));
-        QObject::connect(s_threshold, SIGNAL(upperValueChanged(int)), s_u_dsp, SLOT(setValue(int)));
-        QObject::connect(s_threshold, SIGNAL(lowerValueChanged(int)), s_l_dsp, SLOT(setValue(int)));
-        QObject::connect(v_threshold, SIGNAL(upperValueChanged(int)), v_u_dsp, SLOT(setValue(int)));
-        QObject::connect(v_threshold, SIGNAL(lowerValueChanged(int)), v_l_dsp, SLOT(setValue(int)));
+        QObject::connect(m_k_size_disp, SIGNAL(valueChanged(int)), median_kernelsize, SLOT(setValue(int)));
+        QObject::connect(h_upper, SIGNAL(valueChanged(int)), h_u_dsp, SLOT(setValue(int)));
+        QObject::connect(h_u_dsp, SIGNAL(valueChanged(int)), h_upper, SLOT(setValue(int)));
+        QObject::connect(s_u_dsp, SIGNAL(valueChanged(int)), s_upper, SLOT(setValue(int)));
+        QObject::connect(s_upper, SIGNAL(valueChanged(int)), s_u_dsp, SLOT(setValue(int)));
+        QObject::connect(h_lower, SIGNAL(valueChanged(int)), h_l_dsp, SLOT(setValue(int)));
+        QObject::connect(h_l_dsp, SIGNAL(valueChanged(int)), h_lower, SLOT(setValue(int)));
+        QObject::connect(s_lower, SIGNAL(valueChanged(int)), s_l_dsp, SLOT(setValue(int)));
+        QObject::connect(s_l_dsp, SIGNAL(valueChanged(int)), s_lower, SLOT(setValue(int)));
+        QObject::connect(v_upper, SIGNAL(valueChanged(int)), v_u_dsp, SLOT(setValue(int)));
+        QObject::connect(v_lower, SIGNAL(valueChanged(int)), v_l_dsp, SLOT(setValue(int)));
+        QObject::connect(v_u_dsp, SIGNAL(valueChanged(int)), v_upper, SLOT(setValue(int)));
+        QObject::connect(v_l_dsp, SIGNAL(valueChanged(int)), v_lower, SLOT(setValue(int)));
         QObject::connect(erosion_kernelsize, SIGNAL(valueChanged(int)), e_k_size_disp, SLOT(setValue(int)));
         QObject::connect(dilation_kernelsize, SIGNAL(valueChanged(int)), d_k_size_disp, SLOT(setValue(int)));
-        QObject::connect(num_vert, SIGNAL(valueChanged(int)), num_vert_dsp, SLOT(setValue(int)));
-        QObject::connect(area_span, SIGNAL(upperValueChanged(int)), area_u_dsp, SLOT(setValue(int)));
-        QObject::connect(area_span, SIGNAL(lowerValueChanged(int)), area_l_dsp, SLOT(setValue(int)));
-        QObject::connect(fullness_span, SIGNAL(upperValueChanged(int)), fullness_u_dsp, SLOT(setValue(int)));
-        QObject::connect(fullness_span, SIGNAL(lowerValueChanged(int)), fullness_l_dsp, SLOT(setValue(int)));
-        QObject::connect(aratio_span, SIGNAL(upperValueChanged(int)), arat_u_dsp, SLOT(setValue(int)));
-        QObject::connect(aratio_span, SIGNAL(lowerValueChanged(int)), arat_l_dsp, SLOT(setValue(int)));
-        QObject::connect(g_k_size_disp, SIGNAL(valueChanged(int)), gaussian_kernelsize, SLOT(setValue(int)));
-        QObject::connect(m_k_size_disp, SIGNAL(valueChanged(int)), median_kernelsize, SLOT(setValue(int)));
-        QObject::connect(h_u_dsp, SIGNAL(valueChanged(int)), h_threshold, SLOT(setUpperValue(int)));
-        QObject::connect(h_l_dsp, SIGNAL(valueChanged(int)), h_threshold, SLOT(setLowerValue(int)));
-        QObject::connect(s_u_dsp, SIGNAL(valueChanged(int)), s_threshold, SLOT(setUpperValue(int)));
-        QObject::connect(s_l_dsp, SIGNAL(valueChanged(int)), s_threshold, SLOT(setLowerValue(int)));
-        QObject::connect(v_u_dsp, SIGNAL(valueChanged(int)), v_threshold, SLOT(setUpperValue(int)));
-        QObject::connect(v_l_dsp, SIGNAL(valueChanged(int)), v_threshold, SLOT(setLowerValue(int)));
         QObject::connect(e_k_size_disp, SIGNAL(valueChanged(int)), erosion_kernelsize, SLOT(setValue(int)));
         QObject::connect(d_k_size_disp, SIGNAL(valueChanged(int)), dilation_kernelsize, SLOT(setValue(int)));
+        QObject::connect(num_vert, SIGNAL(valueChanged(int)), num_vert_dsp, SLOT(setValue(int)));
         QObject::connect(num_vert_dsp, SIGNAL(valueChanged(int)), num_vert, SLOT(setValue(int)));
-        QObject::connect(area_u_dsp, SIGNAL(valueChanged(int)), area_span, SLOT(setUpperValue(int)));
-        QObject::connect(area_l_dsp, SIGNAL(valueChanged(int)), area_span, SLOT(setLowerValue(int)));
-        QObject::connect(fullness_u_dsp, SIGNAL(valueChanged(int)), fullness_span, SLOT(setUpperValue(int)));
-        QObject::connect(fullness_l_dsp, SIGNAL(valueChanged(int)), fullness_span, SLOT(setLowerValue(int)));
-        QObject::connect(arat_u_dsp, SIGNAL(valueChanged(int)), aratio_span, SLOT(setUpperValue(int)));
-        QObject::connect(arat_l_dsp, SIGNAL(valueChanged(int)), aratio_span, SLOT(setLowerValue(int)));
+        QObject::connect(area_upper, SIGNAL(valueChanged(int)), area_u_dsp, SLOT(setValue(int)));
+        QObject::connect(area_u_dsp, SIGNAL(valueChanged(int)), area_upper, SLOT(setValue(int)));
+        QObject::connect(area_lower, SIGNAL(valueChanged(int)), area_l_dsp, SLOT(setValue(int)));
+        QObject::connect(area_l_dsp, SIGNAL(valueChanged(int)), area_lower, SLOT(setValue(int)));
+        QObject::connect(fullness_upper, SIGNAL(valueChanged(int)), fullness_u_dsp, SLOT(setValue(int)));
+        QObject::connect(fullness_u_dsp, SIGNAL(valueChanged(int)), fullness_upper, SLOT(setValue(int)));
+        QObject::connect(fullness_l_dsp, SIGNAL(valueChanged(int)), fullness_lower, SLOT(setValue(int)));
+        QObject::connect(fullness_lower, SIGNAL(valueChanged(int)), fullness_l_dsp, SLOT(setValue(int)));
+        QObject::connect(arat_lower, SIGNAL(valueChanged(int)), arat_l_dsp, SLOT(setValue(int)));
+        QObject::connect(arat_u_dsp, SIGNAL(valueChanged(int)), arat_upper, SLOT(setValue(int)));
+        QObject::connect(arat_l_dsp, SIGNAL(valueChanged(int)), arat_lower, SLOT(setValue(int)));
+        QObject::connect(arat_upper, SIGNAL(valueChanged(int)), arat_u_dsp, SLOT(setValue(int)));
+        QObject::connect(exposure_dsp, SIGNAL(valueChanged(int)), exposure_val, SLOT(setValue(int)));
+        QObject::connect(exposure_val, SIGNAL(valueChanged(int)), exposure_dsp, SLOT(setValue(int)));
 
         tabs->setCurrentIndex(0);
+        morpho_type->setCurrentIndex(1);
 
 
-        QMetaObject::connectSlotsByName(window);
+        QMetaObject::connectSlotsByName(DawgmaVision);
     } // setupUi
 
-    void retranslateUi(QMainWindow *window)
+    void retranslateUi(QMainWindow *DawgmaVision)
     {
-        window->setWindowTitle(QApplication::translate("window", "Dawgma1712Vision", 0, QApplication::UnicodeUTF8));
+        DawgmaVision->setWindowTitle(QApplication::translate("DawgmaVision", "Dawgma1712 Vision", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        targeting_tab->setToolTip(QApplication::translate("window", "<html><head/><body><p>This tab lets you edit all the vision and targeting related stuff.</p></body></html>", 0, QApplication::UnicodeUTF8));
+        targeting_tab->setToolTip(QApplication::translate("DawgmaVision", "<html><head/><body><p>This tab lets you edit all the vision and targeting related stuff.</p></body></html>", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_ACCESSIBILITY
-        targeting_tab->setAccessibleName(QApplication::translate("window", "Targeting", 0, QApplication::UnicodeUTF8));
+        targeting_tab->setAccessibleName(QApplication::translate("DawgmaVision", "Targeting", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_ACCESSIBILITY
 #ifndef QT_NO_ACCESSIBILITY
-        targeting_tab->setAccessibleDescription(QApplication::translate("window", "This tab lets you edit all the vision and targeting related stuff.", 0, QApplication::UnicodeUTF8));
+        targeting_tab->setAccessibleDescription(QApplication::translate("DawgmaVision", "This tab lets you edit all the vision and targeting related stuff.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_ACCESSIBILITY
-        label->setText(QApplication::translate("window", "Output", 0, QApplication::UnicodeUTF8));
-        label_16->setText(QApplication::translate("window", "Center X and Y:", 0, QApplication::UnicodeUTF8));
-        label_17->setText(QApplication::translate("window", "Num. Vertices:", 0, QApplication::UnicodeUTF8));
-        label_18->setText(QApplication::translate("window", "Area:", 0, QApplication::UnicodeUTF8));
-        label_19->setText(QApplication::translate("window", "Fullness:", 0, QApplication::UnicodeUTF8));
-        label_20->setText(QApplication::translate("window", "Aspect Ratio:", 0, QApplication::UnicodeUTF8));
-        area_box->setTitle(QApplication::translate("window", "Area Filter", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("window", "Percent of Image", 0, QApplication::UnicodeUTF8));
-        blur_box->setTitle(QApplication::translate("window", "Gaussian and Median Blur", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("window", "G. Kernel Size", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("window", "M. Kernel Size", 0, QApplication::UnicodeUTF8));
-        threshold_box->setTitle(QApplication::translate("window", "Thresholding", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("window", "H", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("window", "S", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("window", "V", 0, QApplication::UnicodeUTF8));
-        fullness_box->setTitle(QApplication::translate("window", "Fullness Filter", 0, QApplication::UnicodeUTF8));
-        label_14->setText(QApplication::translate("window", "Percent Fullness", 0, QApplication::UnicodeUTF8));
-        morpho_box->setTitle(QApplication::translate("window", "Erosion and Dilation", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("window", "E. Kernel Size", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("window", "D. Kernel Size", 0, QApplication::UnicodeUTF8));
-        shape_box->setTitle(QApplication::translate("window", "Shape Filter", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("window", "Num Vertices", 0, QApplication::UnicodeUTF8));
-        aspect_box->setTitle(QApplication::translate("window", "Aspect Ratio Filter", 0, QApplication::UnicodeUTF8));
-        label_15->setText(QApplication::translate("window", "Aspect Ratio", 0, QApplication::UnicodeUTF8));
-        label_24->setText(QApplication::translate("window", "divide by 10 for decimal", 0, QApplication::UnicodeUTF8));
-        tabs->setTabText(tabs->indexOf(targeting_tab), QApplication::translate("window", "Targeting", 0, QApplication::UnicodeUTF8));
+        label_18->setText(QApplication::translate("DawgmaVision", "Area:", 0, QApplication::UnicodeUTF8));
+        label_17->setText(QApplication::translate("DawgmaVision", "Num. Vertices:", 0, QApplication::UnicodeUTF8));
+        label_20->setText(QApplication::translate("DawgmaVision", "Aspect Ratio:", 0, QApplication::UnicodeUTF8));
+        label_19->setText(QApplication::translate("DawgmaVision", "Fullness:", 0, QApplication::UnicodeUTF8));
+        label_16->setText(QApplication::translate("DawgmaVision", "Center X and Y:", 0, QApplication::UnicodeUTF8));
+        shape_box->setTitle(QApplication::translate("DawgmaVision", "Shape Filter", 0, QApplication::UnicodeUTF8));
+        label_12->setText(QApplication::translate("DawgmaVision", "Num Vertices", 0, QApplication::UnicodeUTF8));
+        aspect_box->setTitle(QApplication::translate("DawgmaVision", "Aspect Ratio Filter", 0, QApplication::UnicodeUTF8));
+        label_15->setText(QApplication::translate("DawgmaVision", "Aspect Ratio", 0, QApplication::UnicodeUTF8));
+        label_24->setText(QApplication::translate("DawgmaVision", "divide by 10 for decimal", 0, QApplication::UnicodeUTF8));
+        threshold_box->setTitle(QApplication::translate("DawgmaVision", "Thresholding", 0, QApplication::UnicodeUTF8));
+        label_10->setText(QApplication::translate("DawgmaVision", "S", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("DawgmaVision", "H", 0, QApplication::UnicodeUTF8));
+        label_11->setText(QApplication::translate("DawgmaVision", "V", 0, QApplication::UnicodeUTF8));
+        area_box->setTitle(QApplication::translate("DawgmaVision", "Area Filter", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("DawgmaVision", "Percent of Image", 0, QApplication::UnicodeUTF8));
+        morpho_box->setTitle(QApplication::translate("DawgmaVision", "Erosion and Dilation", 0, QApplication::UnicodeUTF8));
+        ed_kernel_shape->clear();
+        ed_kernel_shape->insertItems(0, QStringList()
+         << QApplication::translate("DawgmaVision", "Rectangle", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("DawgmaVision", "Cross", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("DawgmaVision", "Ellipse", 0, QApplication::UnicodeUTF8)
+        );
+        label->setText(QApplication::translate("DawgmaVision", "Kernel Shape", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QApplication::translate("DawgmaVision", "D. Kernel Size", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("DawgmaVision", "E. Kernel Size", 0, QApplication::UnicodeUTF8));
+        morpho_type->clear();
+        morpho_type->insertItems(0, QStringList()
+         << QApplication::translate("DawgmaVision", "Opening (Noise)", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("DawgmaVision", "Closing (Holes)", 0, QApplication::UnicodeUTF8)
+         << QApplication::translate("DawgmaVision", "Both", 0, QApplication::UnicodeUTF8)
+        );
+        label_3->setText(QApplication::translate("DawgmaVision", "Operation Type", 0, QApplication::UnicodeUTF8));
+        exposure_box->setTitle(QApplication::translate("DawgmaVision", "Exposure", 0, QApplication::UnicodeUTF8));
+        fullness_box->setTitle(QApplication::translate("DawgmaVision", "Fullness Filter", 0, QApplication::UnicodeUTF8));
+        label_14->setText(QApplication::translate("DawgmaVision", "Percent Fullness", 0, QApplication::UnicodeUTF8));
+        blur_box->setTitle(QApplication::translate("DawgmaVision", "Gaussian and Median Blur", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("DawgmaVision", "G. Kernel Size", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("DawgmaVision", "M. Kernel Size", 0, QApplication::UnicodeUTF8));
+        image_out->setText(QString());
+        display_raw->setText(QApplication::translate("DawgmaVision", "Display Raw?", 0, QApplication::UnicodeUTF8));
+        display_processed->setText(QApplication::translate("DawgmaVision", "Display Processed?", 0, QApplication::UnicodeUTF8));
+        tabs->setTabText(tabs->indexOf(targeting_tab), QApplication::translate("DawgmaVision", "Targeting", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
-        networking_tab->setToolTip(QApplication::translate("window", "<html><head/><body><p>This tab lets you edit networking settings.</p></body></html>", 0, QApplication::UnicodeUTF8));
+        networking_tab->setToolTip(QApplication::translate("DawgmaVision", "<html><head/><body><p>This tab lets you edit networking settings.</p></body></html>", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_ACCESSIBILITY
-        networking_tab->setAccessibleName(QApplication::translate("window", "Networking", 0, QApplication::UnicodeUTF8));
+        networking_tab->setAccessibleName(QApplication::translate("DawgmaVision", "Networking", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_ACCESSIBILITY
 #ifndef QT_NO_ACCESSIBILITY
-        networking_tab->setAccessibleDescription(QApplication::translate("window", "This tab lets you edit networking settings.", 0, QApplication::UnicodeUTF8));
+        networking_tab->setAccessibleDescription(QApplication::translate("DawgmaVision", "This tab lets you edit networking settings.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_ACCESSIBILITY
-        tabs->setTabText(tabs->indexOf(networking_tab), QApplication::translate("window", "Networking Controls", 0, QApplication::UnicodeUTF8));
+        tabs->setTabText(tabs->indexOf(networking_tab), QApplication::translate("DawgmaVision", "Networking Controls", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem = camera_settings_2->headerItem();
-        ___qtreewidgetitem->setText(1, QApplication::translate("window", "Value", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem->setText(0, QApplication::translate("window", "Camera Settings", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem->setText(1, QApplication::translate("DawgmaVision", "Value", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem->setText(0, QApplication::translate("DawgmaVision", "Camera Settings", 0, QApplication::UnicodeUTF8));
 
         const bool __sortingEnabled = camera_settings_2->isSortingEnabled();
         camera_settings_2->setSortingEnabled(false);
         QTreeWidgetItem *___qtreewidgetitem1 = camera_settings_2->topLevelItem(0);
-        ___qtreewidgetitem1->setText(1, QApplication::translate("window", "These are values that range in number", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem1->setText(0, QApplication::translate("window", "Value Type Settings", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem1->setText(1, QApplication::translate("DawgmaVision", "These are values that range in number", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem1->setText(0, QApplication::translate("DawgmaVision", "Value Type Settings", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem2 = ___qtreewidgetitem1->child(0);
-        ___qtreewidgetitem2->setText(0, QApplication::translate("window", "White Balance Temperature  ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem2->setText(0, QApplication::translate("DawgmaVision", "White Balance Temperature  ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem3 = ___qtreewidgetitem2->child(0);
-        ___qtreewidgetitem3->setText(1, QApplication::translate("window", "4000", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem3->setText(0, QApplication::translate("window", "Value (2000-6500)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem3->setText(1, QApplication::translate("DawgmaVision", "4000", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem3->setText(0, QApplication::translate("DawgmaVision", "Value (2000-6500)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem4 = ___qtreewidgetitem1->child(1);
-        ___qtreewidgetitem4->setText(0, QApplication::translate("window", "Zoom", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem4->setText(0, QApplication::translate("DawgmaVision", "Zoom", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem5 = ___qtreewidgetitem4->child(0);
-        ___qtreewidgetitem5->setText(1, QApplication::translate("window", "100", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem5->setText(0, QApplication::translate("window", "Value  (100-500)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem5->setText(1, QApplication::translate("DawgmaVision", "100", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem5->setText(0, QApplication::translate("DawgmaVision", "Value  (100-500)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem6 = ___qtreewidgetitem1->child(2);
-        ___qtreewidgetitem6->setText(0, QApplication::translate("window", "Focus ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem6->setText(0, QApplication::translate("DawgmaVision", "Focus ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem7 = ___qtreewidgetitem6->child(0);
-        ___qtreewidgetitem7->setText(1, QApplication::translate("window", "0", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem7->setText(0, QApplication::translate("window", "Value (0-250)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem7->setText(1, QApplication::translate("DawgmaVision", "0", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem7->setText(0, QApplication::translate("DawgmaVision", "Value (0-250)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem8 = ___qtreewidgetitem1->child(3);
-        ___qtreewidgetitem8->setText(0, QApplication::translate("window", "Tilt", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem8->setText(0, QApplication::translate("DawgmaVision", "Tilt", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem9 = ___qtreewidgetitem8->child(0);
-        ___qtreewidgetitem9->setText(1, QApplication::translate("window", "3600", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem9->setText(0, QApplication::translate("window", "Value  (-36000 to 36000)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem9->setText(1, QApplication::translate("DawgmaVision", "3600", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem9->setText(0, QApplication::translate("DawgmaVision", "Value  (-36000 to 36000)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem10 = ___qtreewidgetitem1->child(4);
-        ___qtreewidgetitem10->setText(0, QApplication::translate("window", "Pan", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem10->setText(0, QApplication::translate("DawgmaVision", "Pan", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem11 = ___qtreewidgetitem10->child(0);
-        ___qtreewidgetitem11->setText(1, QApplication::translate("window", "3600", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem11->setText(0, QApplication::translate("window", "Value  (-36000 to 36000)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem11->setText(1, QApplication::translate("DawgmaVision", "3600", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem11->setText(0, QApplication::translate("DawgmaVision", "Value  (-36000 to 36000)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem12 = ___qtreewidgetitem1->child(5);
-        ___qtreewidgetitem12->setText(0, QApplication::translate("window", "Exposure", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem12->setText(0, QApplication::translate("DawgmaVision", "Exposure", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem13 = ___qtreewidgetitem12->child(0);
-        ___qtreewidgetitem13->setText(1, QApplication::translate("window", "100", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem13->setText(0, QApplication::translate("window", "Value  (3-2047)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem13->setText(1, QApplication::translate("DawgmaVision", "100", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem13->setText(0, QApplication::translate("DawgmaVision", "Value  (3-2047)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem14 = ___qtreewidgetitem1->child(6);
-        ___qtreewidgetitem14->setText(0, QApplication::translate("window", "Sharpness", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem14->setText(0, QApplication::translate("DawgmaVision", "Sharpness", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem15 = ___qtreewidgetitem14->child(0);
-        ___qtreewidgetitem15->setText(1, QApplication::translate("window", "128", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem15->setText(0, QApplication::translate("window", "Value  (0-255)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem15->setText(1, QApplication::translate("DawgmaVision", "128", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem15->setText(0, QApplication::translate("DawgmaVision", "Value  (0-255)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem16 = ___qtreewidgetitem1->child(7);
-        ___qtreewidgetitem16->setText(0, QApplication::translate("window", "Gain ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem16->setText(0, QApplication::translate("DawgmaVision", "Gain ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem17 = ___qtreewidgetitem16->child(0);
-        ___qtreewidgetitem17->setText(1, QApplication::translate("window", "0", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem17->setText(0, QApplication::translate("window", "Value (0-255)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem17->setText(1, QApplication::translate("DawgmaVision", "0", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem17->setText(0, QApplication::translate("DawgmaVision", "Value (0-255)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem18 = ___qtreewidgetitem1->child(8);
-        ___qtreewidgetitem18->setText(0, QApplication::translate("window", "Brightness ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem18->setText(0, QApplication::translate("DawgmaVision", "Brightness ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem19 = ___qtreewidgetitem18->child(0);
-        ___qtreewidgetitem19->setText(1, QApplication::translate("window", "128", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem19->setText(0, QApplication::translate("window", "Value (0-255)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem19->setText(1, QApplication::translate("DawgmaVision", "128", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem19->setText(0, QApplication::translate("DawgmaVision", "Value (0-255)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem20 = ___qtreewidgetitem1->child(9);
-        ___qtreewidgetitem20->setText(0, QApplication::translate("window", "Contrast ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem20->setText(0, QApplication::translate("DawgmaVision", "Contrast ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem21 = ___qtreewidgetitem20->child(0);
-        ___qtreewidgetitem21->setText(1, QApplication::translate("window", "128", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem21->setText(0, QApplication::translate("window", " Value (0-255)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem21->setText(1, QApplication::translate("DawgmaVision", "128", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem21->setText(0, QApplication::translate("DawgmaVision", " Value (0-255)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem22 = ___qtreewidgetitem1->child(10);
-        ___qtreewidgetitem22->setText(0, QApplication::translate("window", "Saturation ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem22->setText(0, QApplication::translate("DawgmaVision", "Saturation ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem23 = ___qtreewidgetitem22->child(0);
-        ___qtreewidgetitem23->setText(1, QApplication::translate("window", "128", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem23->setText(0, QApplication::translate("window", "Value (0-255)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem23->setText(1, QApplication::translate("DawgmaVision", "128", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem23->setText(0, QApplication::translate("DawgmaVision", "Value (0-255)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem24 = camera_settings_2->topLevelItem(1);
-        ___qtreewidgetitem24->setText(1, QApplication::translate("window", "These are booleans", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem24->setText(0, QApplication::translate("window", "On/Off Type Settings", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem24->setText(1, QApplication::translate("DawgmaVision", "These are booleans", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem24->setText(0, QApplication::translate("DawgmaVision", "On/Off Type Settings", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem25 = ___qtreewidgetitem24->child(0);
-        ___qtreewidgetitem25->setText(0, QApplication::translate("window", "white_balance_temperature_auto", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem25->setText(0, QApplication::translate("DawgmaVision", "white_balance_temperature_auto", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem26 = ___qtreewidgetitem25->child(0);
-        ___qtreewidgetitem26->setText(1, QApplication::translate("window", "1", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem26->setText(0, QApplication::translate("window", "Value (Can only be 1)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem26->setText(1, QApplication::translate("DawgmaVision", "1", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem26->setText(0, QApplication::translate("DawgmaVision", "Value (Can only be 1)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem27 = ___qtreewidgetitem24->child(1);
-        ___qtreewidgetitem27->setText(0, QApplication::translate("window", "power_line_frequency ", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem27->setText(0, QApplication::translate("DawgmaVision", "power_line_frequency ", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem28 = ___qtreewidgetitem27->child(0);
-        ___qtreewidgetitem28->setText(1, QApplication::translate("window", "0", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem28->setText(0, QApplication::translate("window", "Value (0-2)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem28->setText(1, QApplication::translate("DawgmaVision", "0", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem28->setText(0, QApplication::translate("DawgmaVision", "Value (0-2)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem29 = ___qtreewidgetitem24->child(2);
-        ___qtreewidgetitem29->setText(0, QApplication::translate("window", "backlight_compensation", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem29->setText(0, QApplication::translate("DawgmaVision", "backlight_compensation", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem30 = ___qtreewidgetitem29->child(0);
-        ___qtreewidgetitem30->setText(1, QApplication::translate("window", "0", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem30->setText(0, QApplication::translate("window", "Value (0-1)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem30->setText(1, QApplication::translate("DawgmaVision", "0", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem30->setText(0, QApplication::translate("DawgmaVision", "Value (0-1)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem31 = ___qtreewidgetitem24->child(3);
-        ___qtreewidgetitem31->setText(0, QApplication::translate("window", "exposure_auto", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem31->setText(0, QApplication::translate("DawgmaVision", "exposure_auto", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem32 = ___qtreewidgetitem31->child(0);
-        ___qtreewidgetitem32->setText(1, QApplication::translate("window", "3", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem32->setText(0, QApplication::translate("window", "Value (0-3)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem32->setText(1, QApplication::translate("DawgmaVision", "3", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem32->setText(0, QApplication::translate("DawgmaVision", "Value (0-3)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem33 = ___qtreewidgetitem24->child(4);
-        ___qtreewidgetitem33->setText(0, QApplication::translate("window", "exposure_auto_priority", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem33->setText(0, QApplication::translate("DawgmaVision", "exposure_auto_priority", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem34 = ___qtreewidgetitem33->child(0);
-        ___qtreewidgetitem34->setText(1, QApplication::translate("window", "0", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem34->setText(0, QApplication::translate("window", "Value (0-1)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem34->setText(1, QApplication::translate("DawgmaVision", "0", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem34->setText(0, QApplication::translate("DawgmaVision", "Value (0-1)", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem35 = ___qtreewidgetitem24->child(5);
-        ___qtreewidgetitem35->setText(0, QApplication::translate("window", "focus_auto", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem35->setText(0, QApplication::translate("DawgmaVision", "focus_auto", 0, QApplication::UnicodeUTF8));
         QTreeWidgetItem *___qtreewidgetitem36 = ___qtreewidgetitem35->child(0);
-        ___qtreewidgetitem36->setText(1, QApplication::translate("window", "1", 0, QApplication::UnicodeUTF8));
-        ___qtreewidgetitem36->setText(0, QApplication::translate("window", "Value (Can only be 1)", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem36->setText(1, QApplication::translate("DawgmaVision", "1", 0, QApplication::UnicodeUTF8));
+        ___qtreewidgetitem36->setText(0, QApplication::translate("DawgmaVision", "Value (Can only be 1)", 0, QApplication::UnicodeUTF8));
         camera_settings_2->setSortingEnabled(__sortingEnabled);
 
-        label_4->setText(QApplication::translate("window", "Preview", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("window", "NOTE: Some cameras will not allow editing all these settings!", 0, QApplication::UnicodeUTF8));
-        tabs->setTabText(tabs->indexOf(camera_settings), QApplication::translate("window", "Camera Settings", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("window", "Save", 0, QApplication::UnicodeUTF8));
-        pushButton_2->setText(QApplication::translate("window", "Load", 0, QApplication::UnicodeUTF8));
-        label_21->setText(QApplication::translate("window", "Filename", 0, QApplication::UnicodeUTF8));
-        tabs->setTabText(tabs->indexOf(menu), QApplication::translate("window", "Menu", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("DawgmaVision", "Preview", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("DawgmaVision", "NOTE: Some cameras will not allow editing all these settings!", 0, QApplication::UnicodeUTF8));
+        tabs->setTabText(tabs->indexOf(camera_settings), QApplication::translate("DawgmaVision", "Camera Settings", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("DawgmaVision", "Save", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("DawgmaVision", "Load", 0, QApplication::UnicodeUTF8));
+        label_21->setText(QApplication::translate("DawgmaVision", "Filename", 0, QApplication::UnicodeUTF8));
+        tabs->setTabText(tabs->indexOf(menu), QApplication::translate("DawgmaVision", "Menu", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class window: public Ui_window {};
+    class DawgmaVision: public Ui_DawgmaVision {};
 } // namespace Ui
 
 QT_END_NAMESPACE
